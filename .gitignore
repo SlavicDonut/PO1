@@ -1,6 +1,6 @@
 # IDE / Editor specific
-.idea/
-.vscode/
+*.idea/
+*.vscode/
 
 # Build and CMake generated files
 build/
