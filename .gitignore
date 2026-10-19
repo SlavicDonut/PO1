@@ -1,3 +1,19 @@
+# IDE / Editor specific
+.idea/
+.vscode/
+
+# Build and CMake generated files
+build/
+Build/
+build-*/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+install_manifest.txt
+compile_commands.json
+
 # Prerequisites
 *.d
 
@@ -37,19 +53,6 @@
 *.exe
 *.out
 *.app
-
-# Build directories
-build/
-Build/
-build-*/
-
-# CMake generated files
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
-install_manifest.txt
-compile_commands.json
 
 # Temporary files
 *.tmp
