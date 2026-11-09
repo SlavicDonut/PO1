@@ -16,7 +16,6 @@ int main() {
     std::cout << "Vector1 = " + vector1.toString() << std::endl;
     std::cout << "Vector2 = " + vector2.toString() << std::endl;
 
-
     vector3 = vector1 + vector2;
 
     std::cout << "Vector1 + Vector2 = " + vector3.toString() << std::endl;

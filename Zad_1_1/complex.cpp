@@ -4,6 +4,8 @@
 
 #include "complex.h"
 
+#include <format>
+
 
 Complex::Complex(double re, double im) {
     this->re = re;
@@ -11,7 +13,8 @@ Complex::Complex(double re, double im) {
 }
 
 std::string Complex::toString() const {
-    return std::to_string(getRe())  + " + " + std::to_string(getIm()) + "i";
+    if (this->im < 0.0) {return std::format("{:.2f} - {:.2f}i", this->re, this->im * -1);}
+    return std::format("{:.2f} + {:.2f}i", this->re, this->im);
 }
 
 double Complex::getRe() const {return this->re;}
