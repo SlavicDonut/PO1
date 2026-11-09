@@ -13,12 +13,14 @@ class Pastry {
 public:
     [[nodiscard]] Pastry();
 
-    Pastry(const std::string &name, const std::string &flavour, double weight);
+    [[nodiscard]] Pastry(const std::string &name, const std::string &flavour, double weight);
 
     [[nodiscard]] Pastry(const std::string &name, const std::string &flavour, const std::string &topping, double weight);
 
     [[nodiscard]] Pastry(const std::string &name, const std::string &flavour, const std::string &topping, double weight,
         Color coloring);
+
+    [[nodiscard]] Pastry(const Pastry& source);
 
     [[nodiscard]] std::string getName() const;
 

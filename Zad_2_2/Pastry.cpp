@@ -65,6 +65,17 @@ Pastry::Pastry(const std::string &name, const std::string &flavour, const std::s
                      getName() ,getFlavour(), getTopping(), getWeight(), static_cast<int>(getColoring())) << std::endl;
 }
 
+Pastry::Pastry(const Pastry &source) {
+    setName(source.getName());
+    setFlavour(source.getFlavour());
+    setTopping(source.getTopping());
+    setWeight(source.getWeight());
+    setColoring(source.getColoring());
+
+    std::cout << std::format("Copy constructor called\n") << std::endl;
+}
+
+
 std::string Pastry::getName() const {
     return name;
 }
